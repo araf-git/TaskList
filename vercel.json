@@ -19,11 +19,15 @@
       "dest": "index.js"
     },
     {
-      "src": "/",
-      "dest": "build/index.html"
+      "src": "/auth",
+      "dest": "index.js"
     },
     {
-      "src": "/auth",
+      "src": "/auth/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/",
       "dest": "build/index.html"
     },
     {
