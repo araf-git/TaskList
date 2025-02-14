@@ -11,11 +11,11 @@
   ],
   "routes": [
     {
-      "src": "/products",
+      "src": "/tasks",
       "dest": "index.js"
     },
     {
-      "src": "/products/(.*)",
+      "src": "/tasks/(.*)",
       "dest": "index.js"
     },
     {
@@ -23,7 +23,7 @@
       "dest": "build/index.html"
     },
     {
-      "src": "/add",
+      "src": "/auth",
       "dest": "build/index.html"
     },
     {
