@@ -76,7 +76,8 @@ export const signUp = async (req, res) => {
       res.cookie("refresh_token", refresh_token, {
         httpOnly: true,
         secure: true,
-        sameSite: "none",
+        // sameSite: "none",
+        sameSite: "lax",
         maxAge: 5 * 24 * 60 * 60 * 1000, // 5 days
       });
 
@@ -162,7 +163,8 @@ export const login = async (req, res) => {
       res.cookie("refresh_token", refresh_token, {
         httpOnly: true,
         secure: true,
-        sameSite: "none",
+        // sameSite: "none",
+        sameSite: "lax",
         maxAge: 5 * 24 * 60 * 60 * 1000,
       });
 
@@ -442,7 +444,8 @@ export const refresh = async (req, res) => {
       res.cookie("refresh_token", refresh_token, {
         httpOnly: true,
         secure: true,
-        sameSite: "none",
+        // sameSite: "none",
+        sameSite: "lax",
         maxAge: 5 * 24 * 60 * 60 * 1000, // 5 days
       });
 
@@ -495,7 +498,8 @@ export const logout = async (req, res) => {
     res.cookie("refresh_token", "", {
       httpOnly: true,
       secure: true,
-      sameSite: "None",
+      // sameSite: "none",
+      sameSite: "lax",
       expires: new Date(0),
     });
 
