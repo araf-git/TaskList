@@ -31,10 +31,6 @@
       "dest": "build/index.html"
     },
     {
-      "src": "/**",
-      "dest": "build/index.html"
-    },
-    {
       "src": "/login",
       "dest": "build/index.html"
     },
