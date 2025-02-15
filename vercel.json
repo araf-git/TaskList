@@ -35,6 +35,18 @@
       "dest": "build/index.html"
     },
     {
+      "src": "/about",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/userinfo",
+      "dest": "build/index.html"
+    },
+    {
       "src": "/(.+)",
       "dest": "build/$1"
     }
