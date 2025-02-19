@@ -27,11 +27,31 @@
       "dest": "index.js"
     },
     {
+      "src": "/auth/google",
+      "dest": "index.js"
+    },
+    {
+      "src": "/auth/google/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/auth/google/callback",
+      "dest": "index.js"
+    },
+    {
+      "src": "/auth/google/callback/(.*)",
+      "dest": "index.js"
+    },
+    {
       "src": "/",
       "dest": "build/index.html"
     },
     {
       "src": "/login",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/signup",
       "dest": "build/index.html"
     },
     {
@@ -44,6 +64,10 @@
     },
     {
       "src": "/userinfo",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/forgot",
       "dest": "build/index.html"
     },
     {

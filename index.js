@@ -2,7 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 // import cors from "cors";
 import mongoose from "mongoose";
-import router from "./routes/user.js";
+import router from "./routes/auth.js";
+import googleRouter from "./routes/googleAuth.js";
 import taskRouter from "./routes/task.js";
 import cookieParser from "cookie-parser";
 import helmet from "helmet";
@@ -32,6 +33,7 @@ server.use(helmet());
 server.use(cookieParser());
 server.use(express.json());
 server.use("/auth", router);
+server.use("/auth/google", googleRouter);
 server.use("/tasks", taskRouter);
 
 server.listen(process.env.PORT, () => {
