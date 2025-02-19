@@ -1,8 +1,8 @@
 import { Strategy as GoogleStrategy } from "passport-google-oauth20";
 import passport from "passport";
-import User from "../model/User.js";
 import bcrypt from "bcrypt";
 import generateTokens from "../utils/gengerateTokens.js";
+import User from "../model/user.js";
 
 passport.use(
   new GoogleStrategy(
