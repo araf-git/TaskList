@@ -71,6 +71,14 @@
       "dest": "build/index.html"
     },
     {
+      "src": "/redirect",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/redirect/(.*)",
+      "dest": "build/index.html"
+    },
+    {
       "src": "/(.+)",
       "dest": "build/$1"
     }
