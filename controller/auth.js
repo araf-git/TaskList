@@ -7,7 +7,7 @@ import OTP from "../utils/emailOTP.js";
 import EmailVerification from "../model/EmailVerification.js";
 import generateTokens from "../utils/gengerateTokens.js"
 import setCookie from "../utils/setCookie.js";
-import User from "../model/User.js";
+import User from "../model/user.js";
 
 // done
 
