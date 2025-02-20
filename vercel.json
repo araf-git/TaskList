@@ -67,6 +67,10 @@
       "dest": "build/index.html"
     },
     {
+      "src": "/userinfo/change-password",
+      "dest": "build/index.html"
+    },
+    {
       "src": "/forgot",
       "dest": "build/index.html"
     },
