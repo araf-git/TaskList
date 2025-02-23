@@ -9,6 +9,7 @@ import {
   passwordReset,
   refresh,
   logout,
+  verifyEmail
 } from "../controller/auth.js";
 import checkUserAuth from "../middleware/auth.js";
 
@@ -17,6 +18,7 @@ const router = express.Router();
 router
   // Public route
   .post("/signup", limiter, signUp)
+  .post("/verify-email", verifyEmail)
   .post("/login", limiter, login)
   .post("/forgot-password", limiter, sendPasswordResetEmail)
   .post("/reset-password/:id/:reset_token", limiter, passwordReset)
