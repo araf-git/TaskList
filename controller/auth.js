@@ -123,20 +123,6 @@ export const verifyEmail = async (req, res) => {
       return res.status(400).json({ status: "failed", message: "Invalid OTP" });
     }
 
-    // Check if OTP is expired
-    const currentTime = new Date();
-    // 15 * 60 * 1000 calculates the expiration period in milliseconds(15 minutes).
-    const expirationTime = new Date(
-      emailVerification.createdAt.getTime() + 15 * 60 * 1000
-    );
-    if (currentTime > expirationTime) {
-      // OTP expired, send new OTP
-      await OTP(req, existingUser);
-      return res.status(400).json({
-        status: "failed",
-        message: "OTP expired, new OTP sent to your email",
-      });
-    }
 
     // OTP is valid and not expired, mark email as verified
     existingUser.verified = true;
