@@ -83,6 +83,22 @@
       "dest": "build/index.html"
     },
     {
+      "src": "/reset-password",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/reset-password/(.*)",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/verify-email",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/verify-email/(.*)",
+      "dest": "build/index.html"
+    },
+    {
       "src": "/redirect",
       "dest": "build/index.html"
     },
