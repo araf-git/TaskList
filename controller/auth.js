@@ -51,7 +51,7 @@ export const signUp = async (req, res) => {
       const doc = await newUser.save();
 
       // console.log(doc);
-      OTP(doc);
+      await OTP(doc);
       return res.status(201).json({
         message: "Registration Successful. Check Your Email for OTP",
       });
@@ -114,7 +114,7 @@ export const verifyEmail = async (req, res) => {
     if (!emailVerification) {
       if (!existingUser.verified) {
         // console.log(existingUser);
-        await OTP(req, existingUser);
+        await OTP(existingUser);
         return res.status(400).json({
           status: "failed",
           message: "Invalid OTP, new OTP sent to your email",
